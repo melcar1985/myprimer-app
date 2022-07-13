@@ -1,12 +1,10 @@
 import React from 'react';
 
 
-export const title =(props) => {
-    console.log(props);
+export const Title =({greeting}) => {
+   
     return(
-        <h1>
-            (props.greeting)
-        </h1>
-    )
+        <h2>{greeting}</h2>
+    );
 }
-export default title;
+export default Title;
