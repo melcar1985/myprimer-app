@@ -1,10 +1,13 @@
-.imagen{
-    display: flex;
-    justify-content: center;
-
+.image{
+    margin-left: 20px;
 }
-.films   img {
-    width: 50px;
-    height: 50px;
-    
+.foto{
+    width: 200px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.nombre{
+    margin-left: 40px;
+    margin-top: 10px;
+    font-family: 'Dosis', sans-serif;
 }

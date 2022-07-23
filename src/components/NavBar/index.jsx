@@ -14,12 +14,7 @@ export const NavBar = () => {
         <ul className="nav__list">
           <li>
             <a className="nav__link" href="#">
-              PLANTAS INTERIOR
-            </a>
-          </li>
-          <li>
-            <a className="nav__link" href="#">
-              PLANTAS EXTERIOR
+              PLANTAS DE INTERIOR
             </a>
           </li>
           <li>

@@ -4,9 +4,9 @@ import React from 'react';
 
 const Item =({info}) => {
     return(
-        <a href='' className="imagen">
-            <img src={info.image} alt='--'/>
-            <p>{info.title}</p>
+        <a href='' className='img'>
+            <img className='foto'   src={info.Image} alt="" />
+            <p className='nombre'>{info.title}</p>
         </a>
     );
 }
