@@ -1,0 +1,44 @@
+.detalles{
+    width:  100%;
+    margin: 10% ;
+}
+
+@media screen and (min-width: 768px){
+    .detalles{
+        width: 98%;
+    }
+    
+}
+
+.detalles{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.detalles2{
+    width: 50%;
+
+}
+
+@media screen and (min-width: 768px){
+    .detalles2{
+        width: 50%;
+    }
+    .nombre{
+        padding-left: 3rem;
+        width: 25%;
+    }
+}
+
+.foto{
+    width: 250px;
+    
+}
+h3{
+    font-family: 'Handlee', cursive;
+    font-weight: bold; 
+    font-size: 20px;
+    margin-top: 2rem;  
+}

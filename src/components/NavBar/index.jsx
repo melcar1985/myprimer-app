@@ -1,10 +1,11 @@
 import React from "react";
+import './navBar.css'
 import CartWidget from "../CartWidget";
 
 export const NavBar = () => {
   return (
     <div className="container">
-      <nav className="nav">
+      <nav>
         <div className="nav_brand">
           <h1>FLOR DEL SOL</h1>
           <div>
@@ -37,5 +38,6 @@ export const NavBar = () => {
     </div>
   );
 };
+
 
 export default NavBar;
