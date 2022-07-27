@@ -1,9 +1,12 @@
 
+.logo{
+    
+}
+
 .container{
     background: rgb(34,193,195);
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    margin-top: 10px;
-    padding: 20px;
+    width:100%;
 
 }    
 .nav_brand{
@@ -16,16 +19,18 @@
 
 .nav__list{
     list-style: none;
-    text-align: center;
-   
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    
+    
 }
 .nav__link{
     font-family: 'Handlee', cursive;
     text-decoration: none;
     color: black;
     font-weight: bold;
-    display: flex;
-    flex-direction: row;
+    
 }
 .nav__link:hover{
     background: rgb(34,193,195);

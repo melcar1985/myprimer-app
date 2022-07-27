@@ -11,7 +11,7 @@
 }
 
 .detalles{
-    margin-top: 5rem;
+    margin-top: 7rem;
     margin-bottom: 5rem;
     width: 80%;
     display: flex;
@@ -32,13 +32,23 @@
     }
 }
 
-.foto{
+.foto{ 
     width: 250px;
     
 }
-h3{
+h3{ /* Descripción del producto*/
     font-family: 'Handlee', cursive;
     font-weight: bold; 
     font-size: 20px;
     margin-top: 2rem;  
+}
+.precio{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(184, 103, 11);
+    text-align: center;
+}
+
+.precio:hover{
+    background-color: #111718;
+      color: white;
 }

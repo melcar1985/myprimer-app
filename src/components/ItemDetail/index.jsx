@@ -8,8 +8,9 @@ export const ItemDetail = ({data}) => {
     <div className="detalles">
         <div className="detalles2">
             <img className="foto"  src={data.Image} alt="" />
-            <div className="nombre">
+            <div>
                 <h3 >{data.title}</h3>
+                <p className='precio'>{ data.price}$ </p>
             </div>
         </div>
     </div>
