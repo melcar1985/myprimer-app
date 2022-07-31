@@ -1,9 +1,16 @@
 .counter{
-    width:fit-content;
+    width:180px;
     background: rgb(34,193,195);
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    margin-left: 20px;
-    padding: 0rem;
+    margin-left: 10rem;
     text-align:center;
-    border-radius: 5%;
+    border-radius: 2%;
+    display: flex;
+    justify-content:right;
+    align-items: center;
 }
+.botoncarrito{
+   padding: 0px;
+   margin-right: 10px;
+}
+

@@ -1,25 +1,27 @@
-.detalles{
-    width:  100%;
-    margin: 10% ;
-}
-
-@media screen and (min-width: 768px){
-    .detalles{
-        width: 98%;
-    }
-    
-}
-
-.detalles{
+.detalles{ 
+    text-align: center;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+    width: 80%;
     margin-top: 7rem;
     margin-bottom: 5rem;
     width: 80%;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px){
+    .detalles{
+        width: 100%;
+    }
+    
 }
 .detalles2{
-    width: 50%;
-
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+    justify-content: center;
+    align-items:stretch;
 }
 
 @media screen and (min-width: 768px){
@@ -33,22 +35,23 @@
 }
 
 .foto{ 
-    width: 250px;
+    width: 400px;
     
 }
 h3{ /* Descripción del producto*/
     font-family: 'Handlee', cursive;
     font-weight: bold; 
     font-size: 20px;
-    margin-top: 2rem;  
+    margin-top: 2rem; 
+    margin-left: 40px; 
 }
 .precio{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(184, 103, 11);
-    text-align: center;
+    color: white;
+    background-color: #111718;
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    margin-top: 10rem;
 }
 
-.precio:hover{
-    background-color: #111718;
-      color: white;
-}
