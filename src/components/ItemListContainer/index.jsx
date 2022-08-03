@@ -18,7 +18,7 @@ const images =[
     {id: 9, Image:"https://www.elmueble.com/medio/2019/10/09/kalanchoe-resistente-y-colorida_8be1c0a1_2000x1500.jpg" ,category:'Plantas',title:"KALANCHOE, RESISTENTE Y COLORIDA"},
     {id: 10, Image:"https://www.elmueble.com/medio/2019/10/09/amaryllis-un-bulbo-con-flor-duradera_507078c1_1000x1000.jpeg",category:'Plantas', title:"AMARYLLIS, UN BULBO CON FLOR DURADERA"},
     {id: 11, Image:"https://www.elmueble.com/medio/2019/10/09/rosal-mini-o-pitimini_745aa7e8_510x558.jpg",category:'Plantas', title:"ROSAL MINI O PITIMINÍ"},
-    {id: 12, Image:"https://www.elmueble.com/medio/2019/10/09/gardenia-aroma-y-belleza-en-blanco_aa5bd066_2000x2000.jpg", category:'Plantas', title:"KALANCHOE, RESISTENTE Y COLORIDA"},
+    {id: 12, Image:"https://www.elmueble.com/medio/2019/10/09/gardenia-aroma-y-belleza-en-blanco_aa5bd066_2000x2000.jpg", category:'Plantas', title:"GARDENIA, UNA PLANTA DE INTERIOR CON FLORES BLANCAS"},
     {id: 13, Image:"https://microplast.com.ar/estructura/_plantilla/e_microplast/img/clementina.png", category:'Macetas', title:"CLEMENTINA1"},
     {id: 14, Image:"https://microplast.com.ar/estructura/_plantilla/e_microplast/img/luisana.png", category:'Macetas', title:"CLEMENTINA2"},
     {id: 15, Image:"https://microplast.com.ar/estructura/_plantilla/e_microplast/img/fanny.png", category:'Macetas', title:"CLEMENTINA3"},
