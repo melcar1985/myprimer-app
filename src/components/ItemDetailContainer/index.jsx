@@ -1,6 +1,6 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect} from 'react';
 import {useParams} from 'react-router-dom';
-import ItemDetail from "../ItemDetail";
+import ItemDetail from '../ItemDetail';
 
 
 const images= [

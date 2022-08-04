@@ -9,15 +9,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CartProvider from './Context/CartContext';
 
 
-
-
-
 function App() {
   return(
   <>
   <BrowserRouter>
-  <NavBar />
   <CartProvider> 
+  <NavBar />
   <Routes>
       <Route path='/' element = {<ItemListContainer />} />
       <Route path='/categoria/:categoriaId' element = {<ItemListContainer />} />
