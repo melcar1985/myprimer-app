@@ -38,7 +38,8 @@ console.log('carrito: ' ,cart);
                 isInCart,
                 clearCart,
                 removerProduct,
-                addProducto
+                addProducto,
+
             }}>
                 {children}
             </CartContext.Provider>
