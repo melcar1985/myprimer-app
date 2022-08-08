@@ -27,8 +27,9 @@ export const NavBar = () => {
               REGALÁ</NavLink> 
             </li>
           <li>
-            <NavLink className="nav__link" to='Cart'>
-              <CartWidget /> Comprar</NavLink> 
+            <NavLink className="nav__link" to='/cart'>
+              <CartWidget />
+            </NavLink> 
            </li>
         </ul>
       </nav>

@@ -10,9 +10,9 @@ import React from 'react';
     
 
     return(
-        <Link to={`/detalle/${info.id}`} className='img'>
-            <img className='foto'   src={info.Image} alt="" />
-            <p className='nombre'>{info.title}</p>
+        <Link to={`/detalle/${info.id}`} className="">
+            <img className='foto-portada'  src={info.Image} alt="" />
+            <p className="foto-portada">{info.title}</p>
         </Link>
     );
 }

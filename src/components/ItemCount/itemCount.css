@@ -3,14 +3,18 @@
     background: rgb(34,193,195);
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
     margin-left: 10rem;
-    text-align:center;
     border-radius: 2%;
     display: flex;
-    justify-content:right;
-    align-items: center;
+    margin-top: 50px;
+    
+   
+    
 }
 .botoncarrito{
    padding: 0px;
    margin-right: 10px;
+   display: flex;
+   justify-content:right;
+   align-items: center;
 }
 

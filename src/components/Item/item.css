@@ -1,0 +1,16 @@
+
+.foto{
+    
+    width: 1200px;
+    height: 600px;
+}
+.nombre{
+    font-size: 30px;
+    
+}
+.foto-portada{
+    width: 380px;
+    height: 560px;
+    object-fit: cover;
+    margin-left: 60px;
+}
