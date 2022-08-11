@@ -16,14 +16,21 @@ const ItemList = ({data = []}) =>{
         const data = snapshot.docs.map(doc => ({id: doc.id, ...doc.data()}))
         setProducts(data);
         console.log(data);
-        console.log(snapshot);
     })
 
    }, []);
 
     return(
-    
-         data.map(img => <Item key={img.id} info={img}/>)
+        <div>  
+            {(products.length === 0) ?
+            <div>Cargando...</div>  :
+             data.map(img => <Item key={img.id} info={img}/>)
+        }
+            
+           
+        
+        </div>
+       
      );
     
     
