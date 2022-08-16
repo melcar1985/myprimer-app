@@ -15,8 +15,7 @@ const ItemListLimit = () => {
     
     const q = query (itemsCollection, 
         where("price", "<", limit));
-        where("category", "==", "plantas");
-    
+
         getDocs(q).then(snapshot => {
         const data = snapshot.docs.map(doc => ({id: doc.id, ...doc.data()}))
         setProducts(data);
