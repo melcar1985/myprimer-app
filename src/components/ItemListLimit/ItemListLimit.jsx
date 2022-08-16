@@ -10,19 +10,24 @@ const ItemListLimit = () => {
 
    useEffect( ()=> {
     const db = getFirestore();
+    
     const itemsCollection = collection(db, "items");
-    const q = query (itemsCollection, where("price", "<", limit));
-    getDocs(q).then(snapshot => {
+    
+    const q = query (itemsCollection, 
+        where("price", "<", limit));
+        where("category", "==", "plantas");
+    
+        getDocs(q).then(snapshot => {
         const data = snapshot.docs.map(doc => ({id: doc.id, ...doc.data()}))
         setProducts(data);
-    
+      
     });
 
    }, [limit]);
 
     return(
         <div>
-           <h2>ItemListLimit</h2> 
+           <h4>Filtrar por precio</h4> 
         
         <input type="number" value = {limit} onChange={(ev)=> setLimit(Number(ev.target.value))} />
         {(products.length === 0) ?
