@@ -9,8 +9,9 @@
     
 }
 .foto-portada{
-    width: 380px;
-    height: 560px;
+    width: 280px;
+    height: 360px;
     object-fit: cover;
     margin-left: 60px;
+
 }

@@ -5,7 +5,6 @@ import Title from '../Title';
 import {useParams} from 'react-router-dom';
 
 
-
 const images =[
     {id: 1, price: 2820, Image:"https://www.elmueble.com/medio/2019/10/09/guzmania-y-su-peculiar-inflorescencia_d91fa920_1333x2000.jpg", category:'Plantas', title:"GUZMANIA Y SU PECULIAR INFLORESCENCIA"},
     {id: 2, price: 2500, Image:"https://www.elmueble.com/medio/2019/10/09/begonia-o-flor-de-azucar_e1452695_1333x2000.jpg",category:'Plantas', title:"BEGONIA O FLOR DE AZÚCAR"},
@@ -53,6 +52,7 @@ export const ItemListContainer = ({texto}) => {
         <>
         <Title greeting={texto} />
         <ItemList data={data}/>
+       
         </>
         
     );
