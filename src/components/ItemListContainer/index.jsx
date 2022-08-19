@@ -3,9 +3,11 @@ import ItemList from '../ItemList';
 import React, {useState, useEffect} from 'react';
 import Title from '../Title';
 import {useParams} from 'react-router-dom';
+import { getFirestore, collection, getDocs, query, where } from 'firebase/firestore';
 
 
-const images =[
+
+const Image =[
     {id: 1, price: 2820, Image:"https://www.elmueble.com/medio/2019/10/09/guzmania-y-su-peculiar-inflorescencia_d91fa920_1333x2000.jpg", category:'Plantas', title:"GUZMANIA Y SU PECULIAR INFLORESCENCIA"},
     {id: 2, price: 2500, Image:"https://www.elmueble.com/medio/2019/10/09/begonia-o-flor-de-azucar_e1452695_1333x2000.jpg",category:'Plantas', title:"BEGONIA O FLOR DE AZÚCAR"},
     {id: 3, price: 2150, Image:"https://www.elmueble.com/medio/2019/10/09/hibiscus-una-aroma-inigualable_6f7a5047_800x800.jpg",category:'Plantas', title:"HIBISCUS, UNA AROMA INIGUALABLE"},
@@ -31,22 +33,31 @@ const images =[
 export const ItemListContainer = ({texto}) => {
    const [data, setData] = useState([]);
 
-   const{categoriaId} = useParams();
+   const{categoryId } = useParams();
 
    useEffect(() => {
-    const getData = new Promise(resolve => {
-        setTimeout(() => {
-            resolve(images);
-        }, 1000);
-    });
     
-    if(categoriaId){
-        
-        getData.then (res => setData(res.filter(img => img.category === categoriaId)));
+    const querydb = getFirestore();
+
+    const queryCollection = collection (querydb, "products");
+    
+    if(categoryId ){
+
+        const queryFilter = query(
+            where("category" , "==", categoryId ),
+        );
+
+        getDocs(queryFilter).then((res) => setData (res.docs.map((product) => ({ id: product.id, ...product.data() })),
+      
+        ),);
+    
     } else{
-        getData.then(res => setData(res));
+        getDocs(queryCollection).then((res)=> 
+        setData(
+            res.docs.map((product) => ({ id: product.id, ...product.data() })),
+        ));
     }
-    }, [categoriaId])
+    }, [categoryId ])
 
     return(
         <>

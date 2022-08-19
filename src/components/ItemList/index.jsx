@@ -5,7 +5,7 @@ import {collection, getDocs, getFirestore} from "firebase/firestore";
 
 
 
-const ItemList = ({data = []}) =>{
+ const ItemList = ({data = []}) =>{
 
     const [products, setProducts] = useState([]);
 
@@ -18,19 +18,20 @@ const ItemList = ({data = []}) =>{
    getDocs(itemsCollection).then(snapshot => {
         const data = snapshot.docs.map(doc => ({id: doc.id, ...doc.data()}))
         setProducts(data);
-        console.log(data);
+        
     })
 
    }, []);
 
     return(
-        
+       
             (products.length === 0) ?
             <div>Cargando...</div>  :
              data.map(img => <Item key={img.id} info={img}/>)
-        
+             /*products.map(product => <div key={product.id }> {product.title} - {product.price} $</div>)*/
      );
     
 }
 
 export default ItemList;
+

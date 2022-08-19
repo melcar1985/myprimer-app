@@ -1,9 +1,9 @@
 import React, { useState, useEffect} from 'react';
 import {useParams} from 'react-router-dom';
 import ItemDetail from '../ItemDetail';
+import {getFirestore, doc, getDoc} from 'firebase/firestore';
 
-
-const images= [
+const img= [
    
  {id : 1, Image:"https://www.elmueble.com/medio/2019/10/09/guzmania-y-su-peculiar-inflorescencia_d91fa920_1333x2000.jpg", 
  title :"Su peculiar inflorescencia ,las hace llamativas y muy decorativas. Las hojas que protegen a la flor cuando nace, son de colores muy llamativos, como rojos, naranjas o amarillos. De hecho es lo más espectacular de esta especie. Aunque florecen una sola vez en la vida, cuando lo hacen su flor dura entre 3 y 6 meses.",price : 2820},
@@ -42,17 +42,14 @@ const images= [
     export const ItemDetailContainer = () => {
     
         const [data, setData] = useState({});
-        const{detalleId} = useParams();
+        const{categoryId } = useParams();
          
     useEffect(() => {
-    const getData = new Promise(resolve => {
-        setTimeout(() => {
-            resolve(images);
-        }, 1000);
-    });
-    getData.then (res => setData(res.find(img => img.id === parseInt(detalleId))));
+     const querydb = getFirestore();
+     const queryDoc = doc(querydb, 'products', categoryId );
+     getDoc(queryDoc).then(res => setData({ id: res.id, ...res.data() }))
 
-   }, [])
+   }, [categoryId ])
 
    return(
     

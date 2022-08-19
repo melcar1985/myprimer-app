@@ -31,14 +31,6 @@ export const NavBar = () => {
               <CartWidget />
             </NavLink> 
            </li>
-           <li>
-            <NavLink className="nav__link" to='/buscador'>
-              Filtrar</NavLink> 
-            </li>
-            <li>
-            <NavLink className="nav__link" to='/Contacto'>
-              Contacto</NavLink> 
-            </li>
         </ul>
       </nav>
     </div>

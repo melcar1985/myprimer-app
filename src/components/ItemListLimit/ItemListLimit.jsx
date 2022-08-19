@@ -31,7 +31,7 @@ const ItemListLimit = () => {
         <input type="number" value = {limit} onChange={(ev)=> setLimit(Number(ev.target.value))} />
         {(products.length === 0) ?
             <div>Cargando...</div>  :
-             products.map(product => <div key={product.id}> {product.title} - {product.price} $</div>)
+             products.map(product => <div key={product.id }> {product.title} - {product.price} $</div>)
         }
     </div>
     

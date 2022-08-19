@@ -8,8 +8,6 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CartProvider from './Context/CartContext';
 import ItemListLimit from './components/ItemListLimit/ItemListLimit';
-import SendOrder from './components/SendOrder/SendOrder';
-import ContactForm from './components/ContactForm/ContactForm';
 import ItemList from './components/ItemList/index';
 
 function App() {
@@ -26,9 +24,8 @@ function App() {
       <Route path='/cart' element = {<Cart />} />
       <Route path='/detalle' element = {<ItemDetailContainer />} />
       <Route path='/buscador' element= { <ItemListLimit /> } />
-      <Route path='/Contacto' element= { <ContactForm />}/>
-    </Routes>
-    < SendOrder />
+      </Routes>
+   
    </CartProvider>
   </BrowserRouter>
 </>

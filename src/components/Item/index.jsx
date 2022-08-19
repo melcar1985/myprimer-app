@@ -8,8 +8,8 @@ import React from 'react';
  const Item =({info}) => {
  
      return(
-        <Link to={`/detalle/${info.id}`} className="">
-            <img className='foto-portada'  src={info.Image} alt="" />
+        <Link to={`/detalle/${info.img}`} className="">
+            <img className='foto-portada'  src={info.img} alt="" />
             <p className="foto-portada">{info.title}</p>
         </Link>
     );
