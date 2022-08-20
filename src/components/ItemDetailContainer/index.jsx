@@ -42,14 +42,14 @@ const img= [
     export const ItemDetailContainer = () => {
     
         const [data, setData] = useState({});
-        const{categoryId } = useParams();
+        const{detalleId } = useParams();
          
     useEffect(() => {
      const querydb = getFirestore();
-     const queryDoc = doc(querydb, 'products', categoryId );
+     const queryDoc = doc(querydb, 'products', detalleId );
      getDoc(queryDoc).then(res => setData({ id: res.id, ...res.data() }))
 
-   }, [categoryId ])
+   }, [detalleId ])
 
    return(
     

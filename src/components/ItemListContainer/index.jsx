@@ -43,7 +43,7 @@ export const ItemListContainer = ({texto}) => {
     
     if(categoryId ){
 
-        const queryFilter = query(
+        const queryFilter = query( queryCollection,
             where("category" , "==", categoryId ),
         );
 

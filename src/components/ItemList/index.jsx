@@ -7,7 +7,7 @@ import {collection, getDocs, getFirestore} from "firebase/firestore";
 
  const ItemList = ({data = []}) =>{
 
-    const [products, setProducts] = useState([]);
+    const [setdata, setProducts] = useState([]);
 
    useEffect( ()=> {
     const db = getFirestore();
@@ -25,10 +25,8 @@ import {collection, getDocs, getFirestore} from "firebase/firestore";
 
     return(
        
-            (products.length === 0) ?
-            <div>Cargando...</div>  :
-             data.map(img => <Item key={img.id} info={img}/>)
-             /*products.map(product => <div key={product.id }> {product.title} - {product.price} $</div>)*/
+            setdata.map(img => <Item key={img.id} info={img}/>)
+            
      );
     
 }
