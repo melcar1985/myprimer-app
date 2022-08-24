@@ -5,29 +5,29 @@ import {collection, getDocs, getFirestore} from "firebase/firestore";
 
 
 
- const ItemList = ({data = []}) =>{
-
-    const [setdata, setProducts] = useState([]);
+ const ItemList = () =>{
+ 
+    const [data, setData] = useState([]);
 
    useEffect( ()=> {
     const db = getFirestore();
     
     
-    const itemsCollection = collection(db, "items");
     
-   getDocs(itemsCollection).then(snapshot => {
-        const data = snapshot.docs.map(doc => ({id: doc.id, ...doc.data()}))
-        setProducts(data);
+    const itemsCollection = collection(db, "items");
+    getDocs(itemsCollection).then(snapshot => {
+    const data = snapshot.docs.map(doc => ({id: doc.id, ...doc.data()}));
+    setData(data);
         
-    })
+     })
 
    }, []);
 
     return(
        
-            setdata.map(img => <Item key={img.id} info={img}/>)
-            
-     );
+     data.map(img => <Item key={img.id} info={img}/>)
+       
+        );
     
 }
 
