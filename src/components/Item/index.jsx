@@ -1,5 +1,4 @@
 import './item.css';
-
 import {Link} from 'react-router-dom';
 import React from 'react';
 
@@ -8,10 +7,12 @@ import React from 'react';
  const Item =({info}) => {
  
      return(
-        <Link to={`/detalle/${info.id}`} className="nombre"> 
+        <div className='contenedor'>
+        <Link  to={`/detalle/${info.id}`} className='nombre'> 
             <img className='foto-portada'  src={info.Image} alt="" />
-            <p className="foto-portada">{info.title}</p>
+            <p className='titulo-portada'>{info.title}</p>
         </Link>
+        </div>
     );
 }
 

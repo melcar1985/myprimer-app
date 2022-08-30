@@ -35,11 +35,11 @@ export const ItemListContainer = () => {
     }, [categoryId ])
 
     return(
-        <>
         
         <ItemList data={data}/>
        
-        </>
+       
+        
         
     );
 

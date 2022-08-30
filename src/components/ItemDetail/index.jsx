@@ -18,12 +18,12 @@ export const ItemDetail = ({data}) => {
     
 return(
     
-    <div className='detalles'>
-         <div className='detalles2'>
+    <div className="detalles">
+         <div className="detalles2">
         <img className='foto'  src={data.Image} alt="" />
              <div>
             <h3>{data.title}</h3>
-            <p className='detalles'>
+            <p className="detalles">
                 <h3>{data.detalleId}</h3>
                 </p>
                 {
@@ -31,7 +31,7 @@ return(
                     ? <Link className='finalizar' to= '/cart'>Finalizar compra</Link>
                     :<ItemCount initial={1} stock={5} onAdd={onAdd}/>
                  }
-                <p className='precio'>{ data.price}</p>
+                <p className='precio'>{ data.price}$</p>
             </div>
         </div>
     </div>

@@ -1,7 +1,4 @@
 
-.logo{
-    
-}
 
 .container{
     background: rgb(34,193,195);
@@ -36,4 +33,7 @@
     background: rgb(34,193,195);
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(186,253,45,1) 100%);
     color: white;
+}
+.app{
+    display:contents;
 }
