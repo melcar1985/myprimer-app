@@ -8,4 +8,15 @@ h4{
 }
 .COMPRA{
     margin-left: 31rem;
+    font-family: 35px;
+    text-decoration: none ;
+    border-style:double;
+    text-align: center;
+    background-color:black;
+    color: aliceblue;
+    
+}
+.AGREGAR {
+ color: #111718;
+ 
 }

@@ -1,5 +1,6 @@
 
 import ItemList from '../ItemList';
+import './ItemListContainer.css'
 import React, {useState, useEffect} from 'react';
 import {useParams} from 'react-router-dom';
 import { getFirestore, collection, getDocs, query, where } from 'firebase/firestore';
@@ -35,8 +36,9 @@ export const ItemListContainer = () => {
     }, [categoryId ])
 
     return(
+        <div className='lista'><ItemList data={data}/></div>
         
-        <ItemList data={data}/>
+        
        
        
         

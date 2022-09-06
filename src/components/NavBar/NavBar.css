@@ -1,8 +1,7 @@
 
 
 .container{
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background-image: url(https://www.lavanguardia.com/files/image_948_465/uploads/2020/09/10/5faa61542aa28.jpeg);
     width:150%;
 
 }    
@@ -10,7 +9,7 @@
     font-size: 30px;
     text-align: center;
     font-family: 'Architects Daughter', cursive;
-    color: brown;
+    color: rgb(49, 59, 13);
     
 }
 
@@ -30,10 +29,7 @@
     
 }
 .nav__link:hover{
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(186,253,45,1) 100%);
+    background: rgb(61, 147, 149);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgb(61, 93, 95) 100%);
     color: white;
-}
-.app{
-    display:contents;
 }

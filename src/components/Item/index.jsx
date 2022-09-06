@@ -8,7 +8,7 @@ import React from 'react';
  
      return(
         <div className='contenedor'>
-        <Link  to={`/detalle/${info.id}`} className='nombre'> 
+        <Link  to={`/detalle/${info.id}`}> 
             <img className='foto-portada'  src={info.Image} alt="" />
             <p className='titulo-portada'>{info.title}</p>
         </Link>

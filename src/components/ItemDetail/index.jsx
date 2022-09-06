@@ -23,9 +23,9 @@ return(
         <img className='foto'  src={data.Image} alt="" />
              <div>
             <h3>{data.title}</h3>
-            <p className="detalles">
-                <h3>{data.detalleId}</h3>
-                </p>
+         
+                <h3 className="detalles">{data.detalleId}</h3>
+              
                 {
                     goToCard
                     ? <Link className='finalizar' to= '/cart'>Finalizar compra</Link>

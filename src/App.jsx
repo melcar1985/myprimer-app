@@ -9,16 +9,21 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CartProvider from './Context/CartContext';
 import ContactForm from './components/ContactForm/ContactForm';
 import ItemListLimit from './components/ItemListLimit/Index';
+import PageNotFound from './components/PageNotFound/PageNotFound';
+
+
+
 
 function App() {
+  
+  
+  
   return(
-    
   <>
   <BrowserRouter>
   <CartProvider> 
   <NavBar />
   <br />
- 
   <Routes>
       
       <Route path='/' element = {<ItemListContainer />} />
@@ -27,6 +32,7 @@ function App() {
       <Route path='/detalle/:detalleId' element = {<ItemDetailContainer />} />
       <Route path='/Contacto' element= { <ContactForm />} />
       <Route path='/Buscar' element =  {<ItemListLimit/>}/>
+      <Route component={PageNotFound}/>
   </Routes>
    </CartProvider>
   </BrowserRouter>

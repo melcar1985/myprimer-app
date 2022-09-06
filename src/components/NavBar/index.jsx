@@ -30,8 +30,6 @@ export const NavBar = () => {
             <NavLink className="nav__link" to= '/Buscar'>
             Filtrar
               </NavLink>
-              
-              
             </ul>
          </nav>
       </div>
