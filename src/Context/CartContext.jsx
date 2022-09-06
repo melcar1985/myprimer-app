@@ -32,6 +32,7 @@ console.log('carrito: ', cart);
      const isInCart = (id) => cart.find(product => product.id === id) ? true : false; 
     
     const clearCart = () => setCart([]);
+    const onApprove = () => setCart([]);
     
     const removeProduct = (id) => setCart (cart.filter(product => product.id !== id));
 
@@ -45,6 +46,7 @@ console.log('carrito: ', cart);
                 addProduct,
                 totalPrice,
                 totalProducts,
+                onApprove,
                 cart
 
 

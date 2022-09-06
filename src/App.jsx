@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-
+import ReactDOM from "react-dom"
 import ItemListContainer from './components/ItemListContainer';
 import Cart from './components/Cart/Cart';
 import NavBar from './components/NavBar';
@@ -11,19 +11,17 @@ import ContactForm from './components/ContactForm/ContactForm';
 import ItemListLimit from './components/ItemListLimit/Index';
 import PageNotFound from './components/PageNotFound/PageNotFound';
 
-
-
+const PayPalButton = window.paypal.Buttons.driver("react", { React, ReactDOM });
 
 function App() {
   
-  
-  
-  return(
+ return(
   <>
   <BrowserRouter>
   <CartProvider> 
   <NavBar />
   <br />
+
   <Routes>
       
       <Route path='/' element = {<ItemListContainer />} />
@@ -32,8 +30,12 @@ function App() {
       <Route path='/detalle/:detalleId' element = {<ItemDetailContainer />} />
       <Route path='/Contacto' element= { <ContactForm />} />
       <Route path='/Buscar' element =  {<ItemListLimit/>}/>
+      <Route path='/pago' element =  {<PayPalButton
+        createOrder={(data, actions) => this.createOrder(data, actions)}
+        onApprove={(data, actions) => this.onApprove(data, actions)}
+      />}/>
       <Route component={PageNotFound}/>
-  </Routes>
+ </Routes>
    </CartProvider>
   </BrowserRouter>
 </>

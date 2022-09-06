@@ -32,9 +32,7 @@ const ContactForm = () => {
 
     return (
         
-        
-        
-     <div className='contacto'>
+    <div className='contacto'>
           <h2 className="h2">Formulario de contacto</h2>
         {( typeof id !== "undefined") ?
         
